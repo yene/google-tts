@@ -11,6 +11,7 @@ import (
 func init() {
 	if _, err := os.Stat("/usr/bin/mpg123"); os.IsNotExist(err) {
 		fmt.Println("mpg123 is not installed, please run: sudo apt-get install mpg123")
+		os.Exit(2)
 	}
 }
 

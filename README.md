@@ -6,6 +6,7 @@
 
 ## Raspberry Pi tips
 * force always analog out with `amixer cset numid=3 1`
+* increase volume with `amixer  sset PCM,0 100%`
 * Install mp3 player `sudo apt-get install mpg123`
 * `env GOOS=linux GOARCH=arm GOARM=7 go build -o google-tts-arm`
 
